@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'style-components'
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   * {
@@ -10,7 +10,7 @@ export default createGlobalStyle`
 }
 
 body{
-  background: ${({ theme }) => theme.backgroudColor};
+  background: ${({ theme }) => theme.colors.backgroud};
   font-size: 16px;
 }
 
