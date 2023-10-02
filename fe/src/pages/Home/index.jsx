@@ -5,7 +5,7 @@ import {
   InpurSearchContainer,
   ListContainer
 } from './styles'
-
+import { Link } from 'react-router-dom'
 import arrow from '../../assets/images/icon/arrow.svg'
 import edit from '../../assets/images/icon/edit.svg'
 import trash from '../../assets/images/icon/trash.svg'
@@ -18,7 +18,7 @@ export default function Home () {
       </InpurSearchContainer>
       <Header>
         <strong>3 Contatos</strong>
-        <a href='/'>Novo contato</a>
+        <Link to='/new'>Novo contato</Link>
       </Header>
       <ListContainer>
         <header>
@@ -38,9 +38,9 @@ export default function Home () {
             <span>(65)99999-9999</span>
           </div>
           <div className='actions'>
-            <a href='/'>
+            <Link to='/edit/123'>
               <img src={edit} atl='Edit' />
-            </a>
+            </Link>
             <button className='button' type='button'>
               <img src={trash} atl='Delete' />
             </button>

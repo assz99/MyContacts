@@ -5,7 +5,7 @@ import { Container } from './styled'
 import { Header } from '../Header'
 import { ThemeProvider } from 'styled-components'
 import Routes from '../../Routes'
-import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 function App () {
   return (
